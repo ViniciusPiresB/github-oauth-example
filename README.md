@@ -17,8 +17,8 @@ After this, create a file named ".env" based on ".env.example" file, use client_
 Run the commands bellow
 
 ```bash
-    npm install
-    npm run dev
+npm install
+npm run dev
 ```
 
 After login, you'll receive a user token in your url, can be changed in file "src/controllers/authGithubController" in line 25.
