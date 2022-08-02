@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import { renderHtmlRouter } from "./routes/renderHtml.routes";
+import { authGithubRouter } from "./routes/authGithub.routes";
 
 class App {
   public app: express.Application;
@@ -20,6 +21,7 @@ class App {
 
   routes() {
     this.app.use("/", renderHtmlRouter);
+    this.app.use("/auth", authGithubRouter);
   }
 }
 
