@@ -17,4 +17,4 @@ npm install
 npm run dev
 ```
 
-After login, you'll receive a user token in your url, can be changed in file "src/controllers/authGithubController" in line 25.
+Access your localhost in your browser.
