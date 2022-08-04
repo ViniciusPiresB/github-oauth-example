@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(235 235 235);
+    background-color: rgb(102 174 143);
     height: 100vh ;
 
     display: flex;  
@@ -68,4 +68,44 @@ body {
     height: 30px;
     
     filter: invert();
+}
+
+/* Authenticated Page */
+
+#welcome-auth {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#welcome-auth > img {
+    height: 125px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(56, 56, 56, 0.438);
+
+    display: flex;
+    margin: 40px auto 30px auto;
+}
+
+#welcome-auth > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
+    margin: 0 0 10px 0;
+}
+
+#welcome-auth > div > h1 {
+    flex-grow: 1;
+}
+
+#welcome-auth > div > h2 {
+    margin: 0 0 10px 0;
+}
+
+#welcome-auth > h1, #welcome-auth > h2 {
+    word-wrap: break-word;
 }

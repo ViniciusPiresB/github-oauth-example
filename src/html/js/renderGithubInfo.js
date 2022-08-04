@@ -18,8 +18,8 @@ if (userToken) {
   const avatar = document.getElementById("avatar");
   const followers = document.getElementById("followers");
 
-  name.innerText = `Name: ${info.name}`;
-  location.innerText = `Location: ${info.location}`;
-  avatar.src = info.avatar_url;
-  followers.innerText = `Followers: ${info.followers}`;
+  name.innerText = info.name;
+  location.innerText = info.location;
+  avatar.src = info.avatar_url
+  followers.innerText = info.followers;
 }
