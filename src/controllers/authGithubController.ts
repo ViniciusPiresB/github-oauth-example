@@ -20,9 +20,8 @@ export class AuthGithubController {
       .post("https://github.com/login/oauth/access_token", body, opts)
       .then(_res => _res.data.access_token)
       .then(token => {
-        console.log("My token: ", token);
-
-        res.redirect(`/?token=${token}`);
+        res.cookie("userToken", token);
+        res.redirect("/logged");
       })
       .catch(err => res.status(400).json({ error: err.message }));
   }
