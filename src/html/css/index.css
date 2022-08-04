@@ -109,3 +109,17 @@ body {
 #welcome-auth > h1, #welcome-auth > h2 {
     word-wrap: break-word;
 }
+
+#logout-btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: 9%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#logout-btn > img{
+    height: 20px;
+}

@@ -20,6 +20,8 @@ if (userToken) {
 
   name.innerText = info.name;
   location.innerText = info.location;
-  avatar.src = info.avatar_url
+  avatar.src = info.avatar_url;
   followers.innerText = info.followers;
+} else {
+  window.location.replace("/");
 }
