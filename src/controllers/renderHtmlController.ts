@@ -1,12 +1,13 @@
+import { renderHTMLService } from "../services/renderHTML.service";
 import { Request, Response } from "express";
-import * as path from "path";
-
 export class RenderHtmlController {
   public renderIndex(req: Request, res: Response) {
-    res.sendFile(path.join(__dirname, "../html/index.html"));
+    const pathOfFile = renderHTMLService.getPath("../html/index.html");
+    res.sendFile(pathOfFile);
   }
 
   public renderLoggedUser(req: Request, res: Response) {
-    res.sendFile(path.join(__dirname, "../html/loggedPage.html"));
+    const pathOfFile = renderHTMLService.getPath("../html/loggedPage.html");
+    res.sendFile(pathOfFile);
   }
 }
