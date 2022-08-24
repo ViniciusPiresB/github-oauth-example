@@ -9,16 +9,8 @@ export class AuthGithubController {
     );
   }
 
-  public test(req: Request, res: Response) {
+  public async callback(req: Request, res: Response) {
     const code = req.query.code;
-    const body = {
-      client_id: GITHUB_CLIENT_ID,
-      client_secret: GITHUB_CLIENT_SECRET,
-      code
-    };
-  }
-
-  public async callback(code: any, res: Response) {
     const body = {
       client_id: GITHUB_CLIENT_ID,
       client_secret: GITHUB_CLIENT_SECRET,
