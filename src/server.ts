@@ -1,5 +1,5 @@
 import app from "./app";
-import { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET, PORT } from "./config";
+import { PORT } from "./config";
 
 const port = PORT;
 const server = app.listen(port);
