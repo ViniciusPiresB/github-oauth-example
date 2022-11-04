@@ -26,4 +26,4 @@ docker build -t viniciuspiresb/github-oauth-example:1.0 .
 docker run -dp 8000:8000 viniciuspiresb/github-oauth-example:1.0
 ```
 
-Access your localhost in your browser.
+Access your localhost in your browser at port used on .env file or docker port.
