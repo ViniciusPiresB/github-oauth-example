@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    command: "npm run dev"
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "${PORT}:${PORT}"
+    expose:
+      - "${PORT}"
